@@ -1,0 +1,8 @@
+{
+    "language":{
+        "playwright":"typescript",
+        "selenium":"java"
+    }   
+}
+
+

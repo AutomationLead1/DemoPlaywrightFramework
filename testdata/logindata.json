@@ -1,0 +1,17 @@
+[
+    {
+        "username":"student",
+        "password":"Password123",
+        "assertion":"Logged In Successfully"
+    },
+    {
+        "username":"student",
+        "password":"Password123",
+        "assertion":"Logged In Successfully"
+    },
+    {
+        "username":"student",
+        "password":"Password123",
+        "assertion":"Logged In Successfully"
+    }
+]

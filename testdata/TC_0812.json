@@ -1,0 +1,24 @@
+{
+    "valid":[ {
+        "url":"https://practicetestautomation.com/practice-test-login/",
+        "username":"student","password":"Password123",
+        "assertion":"Logged In Successfully"
+    },
+    {
+        "url":"https://practicetestautomation.com/practice-test-login/",
+        "username":"student","password":"Password123",
+        "assertion":"Logged In Successfully"
+    }
+
+    ],
+    "invalid":[ {
+        "url":"https://practicetestautomation.com/practice-test-login/",
+        "username":"stu","password":"Passwor3",
+        "assertion":"Logged In Successfully"
+    },
+    {
+        "url":"https://practicetestautomation.com/practice-test-login/",
+        "username":"stnt","password":"Paord123",
+        "assertion":"Logged In Successfully"
+    }]
+}
