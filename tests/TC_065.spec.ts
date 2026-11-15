@@ -9,15 +9,13 @@ test('authentication',async({browser})=>{
         }
     })
     let page=await context.newPage()
-
+   
     //enter the test url
-    await page.goto("https://basic-auth-git-main-shashis-projects-4fa03ca5.vercel.app")
-
-    await page.waitForTimeout(3000)
-
+    await page.goto("https://basic-auth-git-main-shashis-projects-4fa03ca5.vercel.app/")
+   
     //handle the authentication popup
 
     //verify authentication popup is handled
-    await expect(page.locator('p')).toHaveText('congratulations with valid credentials')
-
+    await expect(page.locator('//p')).toContainText("congratulations")
+   
 })

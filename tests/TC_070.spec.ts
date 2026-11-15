@@ -12,6 +12,7 @@ test("confirm alert",async({page})=>{
     await page.getByRole("button",{name:"Confirmation Alert"}).click()
     await page.getByRole("button",{name:"Confirmation Alert"}).click()
 
+
     await expect(page.locator("#demo")).toContainText("OK")
    
 })

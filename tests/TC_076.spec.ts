@@ -2,8 +2,7 @@ import {test} from "@playwright/test"
 import excel from "exceljs"
 import path from "path"
 
-
-test("write data",async({page})=>{
+test("write data1",async({page})=>{
     let book=new excel.Workbook()
     await book.xlsx.readFile(path.join(__dirname,"../testdata/excelfile.xlsx")
     )
@@ -27,16 +26,3 @@ test("write data",async({page})=>{
 
 
 
-
-import ExcelJS from "exceljs";
-
-const workbook = new ExcelJS.Workbook();
-workbook.addWorksheet("Sheet1");
-await workbook.xlsx.writeFile("Student.xlsx", {
-    zip: {
-        compression: "DEFLATE",
-        compressionOptions: {
-            level: 9
-        }
-    }
-});

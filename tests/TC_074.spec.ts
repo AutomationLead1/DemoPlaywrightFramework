@@ -2,7 +2,7 @@ import {test,expect} from "@playwright/test"
 import excel from "exceljs"
 import path from "path"
 
-test.only("for application", async ({ page }) => {
+test("for application", async ({ page }) => {
     let book = new excel.Workbook();
     await book.xlsx.readFile(
         path.join(__dirname, "../testdata/excelfile.xlsx")
@@ -20,13 +20,13 @@ test.only("for application", async ({ page }) => {
         });
     }
     console.log(alldata);
+
     for(let data of alldata){
         await page.goto(data.link)
-        await page.getByLabel('Username').fill(data.user)
-        await page.getByLabel("Password").fill(data.password)
+        await page.getByLabel("Username",{exact:true}).fill(data.user)
+        await page.getByLabel("Password",{exact:true}).fill(data.password)
         await page.getByRole("button",{name:"Submit"}).click()
         await expect.soft(page.locator('.post-title')).toContainText(data.assertion)
     }
-
-
+  
 })

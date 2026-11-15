@@ -1,14 +1,15 @@
 import {test} from "@playwright/test"
+import { pathToFileURL } from "url"
 
 test("custom waits",async({page})=>{
     //open the browser
 
     //enter the test url
     await page.goto("https://www.amazon.in/")
-
+    
     //wait until page is loaded
     await page.waitForFunction(()=>{
-        return document.readyState ==='complete'
+        return document.readyState==="complete"
     })
 
     //fill "shoes" in searchfield
@@ -16,7 +17,8 @@ test("custom waits",async({page})=>{
 
     //wait till atleast 1 suggestion is loaded
     await page.waitForFunction(()=>{
-         let ele=document.querySelectorAll('.s-suggestion-container')
-         return ele.length> 1
+        let ele=document.querySelectorAll(".s-suggestion-container")
+        return ele.length>1
     })
+    
 })
