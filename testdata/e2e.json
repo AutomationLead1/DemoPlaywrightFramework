@@ -1,0 +1,26 @@
+[
+    {
+        "username":"standard_user",
+        "password":"secret_sauce",
+        "firstname":"rani",
+        "Lastname":"jhadav",
+        "zipcode":"419055",
+        "confirmmessage":"Thank you for your order!"
+    },
+    {
+        "username":"standard_user",
+        "password":"secret_sauce",
+        "firstname":"rahul",
+        "Lastname":"patel",
+        "zipcode":"419055",
+        "confirmmessage":"Thank you for your order!"
+    },
+    {
+        "username":"standard_user",
+        "password":"secret_sauce",
+        "firstname":"sneha",
+        "Lastname":"patil",
+        "zipcode":"419055",
+        "confirmmessage":"Thank you for your order!"
+    }
+]
