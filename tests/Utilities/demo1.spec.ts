@@ -1,6 +1,8 @@
 import {test} from "@playwright/test"
 
-test("demo jenkins",async()=>{
-    console.log("Jenkins execute");
+test("demo",async()=>{
+    console.log("execute");
+    console.log("playwright");
+    
     
 })
